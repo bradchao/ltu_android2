@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
     private FragmentManager fmgr;
@@ -47,5 +48,19 @@ public class MainActivity extends AppCompatActivity {
             return pages.length;
         }
     }
+
+    public void gotoPage1(View view){
+
+    }
+    public void gotoPage2(View view){
+
+    }
+    public void gotoPage3(View view){
+
+    }
+    public void gotoPage4(View view){
+
+    }
+
 
 }
