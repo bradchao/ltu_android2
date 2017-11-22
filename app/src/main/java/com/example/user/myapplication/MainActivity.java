@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Page3 page3;
     private Page4 page4;
     private Fragment[] pages;
+    private String[] titles = {"主化面", "設定", "輔助", "很好看"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return titles[position];
         }
 
         @Override
